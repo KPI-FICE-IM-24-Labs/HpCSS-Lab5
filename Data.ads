@@ -10,9 +10,9 @@ package Data is
 
     function fillVector return VectorN;
     function fillMatrix return Matrix;
-    function fillSubMatrix (Thread : Integer; M : Matrix) return MatrixH;
+    function fillSubMatrix (Thread : Integer; matrix : Matrix) return MatrixH;
 
-    function multiplyVectorByMatrix (vector : VectorN; Matrix : MatrixH) return VectorH;
+    function multiplyVectorByMatrix (vector : VectorN; matrix : MatrixH) return VectorH;
     function multiplyMatrixByMatrix (matrixA, matrixB : Matrix) return MatrixH;
     function addTwoVectors (vectorA, vectorB: VectorH) return VectorH;
     function findMinumumFromVector (vector: VectorH) return Integer;
