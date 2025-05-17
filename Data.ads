@@ -1,9 +1,10 @@
 package Data is
-    N : constant := 6; -- розмір векторів та матриць
-    H : constant := 2; -- розмір підматриці
+    N : constant := 18; -- розмір векторів та матриць
+    P : constant := 6; -- кількість процесорів
+    H : constant := N / P; -- розмір підматриці
 
     type VectorN is array (1 .. N) of Integer;
-    type VectorH is array (1 .. N) of Integer;
+    type VectorH is array (1 .. H) of Integer;
 
     type Matrix is array (1 .. N) of VectorN;
     type MatrixH is array (1 .. N) of VectorH;
